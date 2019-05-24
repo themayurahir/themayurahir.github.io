@@ -19,9 +19,9 @@ body {
 }
 
 
-@media only screen and (min-device-width: 400px) {
+@media (max-width: 786px) {
   body { 
      background-image: url('original.jpg');
-background-repeat: no-repeat;	 
+	 background-repeat: no-repeat;	 
   }
 }
