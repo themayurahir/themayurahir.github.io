@@ -21,7 +21,7 @@ body {
 
 @media (max-width: 786px) {
   body { 
-     background-image: url('original.jpg');
+     background-image: url('hagrid.jpg');
 	 background-repeat: no-repeat;	 
   }
 }
