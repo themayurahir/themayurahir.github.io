@@ -21,7 +21,8 @@ body {
 
 @media (max-width: 786px) {
   body { 
-     background-image: url('mhagrid.jpg');
-	 background-repeat: no-repeat;	 
+    background-image: url('mhagrid.jpg');
+	background-repeat: no-repeat;
+	background-position: center;	 
   }
 }
