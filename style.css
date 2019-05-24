@@ -21,7 +21,7 @@ body {
 
 @media only screen and (min-device-width: 400px) {
   body { 
-     background-image: url('hagrid1.jpg');
+     background-image: url('original.jpg');
 background-repeat: no-repeat;	 
   }
 }
