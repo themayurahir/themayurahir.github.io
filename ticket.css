@@ -232,10 +232,11 @@ footer a .icons {
   grid-row: 1 / span 2;
   position: relative;
   color: #fff;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
 }
 .ticket__side .logo p {
-  transform: rotate(180deg);
+	padding: 5px 0px 10px 0px;
+	transform: rotate(180deg);
 }
 .ticket__side .info {
   border: 3px solid #c02a28;
