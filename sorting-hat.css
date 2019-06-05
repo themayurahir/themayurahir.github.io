@@ -607,6 +607,10 @@ footer a .icons {
 
 @media (max-width: 786px) {
  
+ .main-content__wrapper {
+  text-align: center;
+  transition: 0.3s ease;
+}
 
 .avatar {
   margin: -30px auto 0;
