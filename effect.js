@@ -16,7 +16,10 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
+					window.setTimeout(function(){
+						//Move to a new location or you can do something else	
+						window.location.href = "ticket.html";
+					}, 5000);
 				});
 				
 			}
@@ -30,5 +33,10 @@ $('document').ready(function(){
 		
 		msgLoop(0);
 		
+		function ready(){
+			//			
+		}
+		
 	
+		
 });
