@@ -92,7 +92,8 @@ var theFunctionToCallWhenTheDocumentIsReady = function() {
       $("#volume").hide();
       
       $("#wave").show();
-	 
+	  $("#foundbtn").show();
+	  $("#c").show();
 
       playAllSounds();
     });

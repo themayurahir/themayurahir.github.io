@@ -1,8 +1,14 @@
-.container {
-  margin-left: auto;
-  margin-top: auto;
+body{
+	background-color: #222;
+}
 
-  text-align: center;
+.container {
+	margin-left: auto;
+	margin-top: auto;
+	padding: 0;
+    margin: 0;
+    overflow: hidden;
+	text-align: center;
 }
 
 .heading {
@@ -16,4 +22,10 @@
 
 .hide {
   display: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
