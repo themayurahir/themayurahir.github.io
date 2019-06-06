@@ -94,6 +94,10 @@
     {
       feather.classList.add('float');
     }
+	else if(listenedWord.toLowerCase() === 'exit')
+	{
+		window.location.href = "ticket.html";
+	}
     textDiv.innerHTML = "Heard:";
     textDiv.innerHTML = textDiv.innerHTML + " " + listenedWord;
   });
