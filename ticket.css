@@ -1,7 +1,7 @@
 body {
   background: #f2f2f2;
   font-family: "Questrial", sans-serif;
-  background-image: url("hpbags.jpg");
+  background-image: url("img/hpbags.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,7 +10,7 @@ body {
 
 aside.context {
   text-align: center;
-  color: #333;
+  color: rgb(128, 119, 119);
   line-height: 1.7;
 }
 aside.context a {
@@ -149,6 +149,10 @@ footer a .icons {
 }
 .platform .number span:nth-child(2) {
   top: 44px;
+}
+
+.platform .number a{
+  color: #fff;
 }
 
 .departure,
