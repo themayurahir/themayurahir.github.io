@@ -1,0 +1,51 @@
+html,
+body {
+  overflow: hidden;
+}
+canvas {
+  -webkit-animation: thunder-bg 8s infinite;
+}
+
+h1 {
+  position: fixed;
+  font-size: 3em;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #565656;
+  transform: translate(-50%, -50%);
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0);
+  font-family: "Contrail one", serif;
+  -webkit-animation: thunder-h1 8s infinite;
+}
+
+@-webkit-keyframes thunder-bg {
+  0% {
+    background-color: #1f1f33;
+  }
+  9% {
+    background-color: #1f1f33;
+  }
+  10% {
+    background-color: #484877;
+  }
+  10.5% {
+    background-color: #1f1f33;
+  }
+  80% {
+    background-color: #1f1f33;
+  }
+  82% {
+    background-color: #484877;
+  }
+  83% {
+    background-color: #1f1f33;
+  }
+  83.5% {
+    background-color: #484877;
+  }
+  100% {
+    background-color: #1f1f33;
+  }
+}
+

@@ -1,8 +1,6 @@
 
-		$(".js-sort").on("click", function() {
-	$(".main-content__wrapper")
-		.removeClass()
-		.addClass("main-content__wrapper");
+$(".js-sort").on("click", function() {
+	$(".main-content__wrapper").removeClass().addClass("main-content__wrapper");
 	$(".sorting-hat,.avatar__mouth").removeClass("animate");
 
 	var houses = ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"];
@@ -18,6 +16,11 @@
 	setTimeout(function() {
 		$(".main-content__wrapper").addClass(item);
 	}, 4000);
+
+	window.setTimeout(function(){
+        //Move to a new location or you can do something else	
+        window.location.href = "../float/float.html";
+      }, 8000);
 });
 
 
@@ -29,4 +32,3 @@ $('input[name=avatar-gender]').on('change', function(){
 		$('.avatar__hair').addClass('female');
 	}
 });
-		

@@ -1,7 +1,7 @@
 body {
   background: #f2f2f2;
   font-family: "Questrial", sans-serif;
-  background-image: url("../img/hpbags.jpg");
+  background-image: url("hogwartsexpress.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -293,5 +293,15 @@ footer a .icons {
 		width: 80%;
 		height: 30%;
 		text-transform: uppercase;
-	}
+  }
+  
+  body {
+    background: #f2f2f2;
+    font-family: "Questrial", sans-serif;
+    background-image: url("hge.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
 }

@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,200,0.4)), url(https://wallpaperclicker.com/storage/wallpaper/harry-potter-and-the-deathly-hallows-hd-wallpaper-11578566.jpg); /*permite poner filtros a la imagen*/
+      background-size: cover;
+      background-position: center;
+    height:90vh;
+      background-attachment: fixed
+  }
+  
+  h1 {
+    font-family: 'Unlock', cursive;
+    color: #FFDF00;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 0;
+  }
+  
+  img {
+    margin-bottom: 40px;
+  }
+  
+  p {
+    color: #f6ffce;
+    text-align: center;
+    font-size: 25px;
+    font-family: roboto;
+  }

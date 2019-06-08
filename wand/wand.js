@@ -7,6 +7,7 @@ var theFunctionToCallWhenTheDocumentIsReady = function() {
   var THRESHOLD_MAGNITUDE = 30;
   var canTrigger = true;
   var sounds = [];
+  
 
   //============================================
   // Shared Variables
@@ -92,11 +93,16 @@ var theFunctionToCallWhenTheDocumentIsReady = function() {
       $("#volume").hide();
       
       $("#wave").show();
-	  $("#foundbtn").show();
-	  $("#c").show();
-
-      playAllSounds();
+	    $("#foundbtn").show();
+	    playAllSounds();
     });
+
+    document.getElementById("foundbtn").onclick = function () {
+      window.setTimeout(function(){
+        //Move to a new location or you can do something else	
+        window.location.href = "../ticket/ticket.html";
+      }, 2000);
+  };
 
     if (window.DeviceMotionEvent) {
       window.addEventListener('devicemotion', deviceMotionHandler, false);
@@ -108,6 +114,7 @@ var theFunctionToCallWhenTheDocumentIsReady = function() {
 
   initialize();
 
+      
 }
 
 $(document).ready(theFunctionToCallWhenTheDocumentIsReady);
