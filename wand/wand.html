@@ -8,75 +8,13 @@
 </head>
 
 <body>
-  <!-- http://foundation.zurb.com/docs/utility-classes.html -->
-  <div class="container">
-    <video id="myVideo" loop muted autoplay>
-        <source src="1.05 Ollivanders - Dust B1C5M4.mp4" type="video/mp4">
-    </video> 
-    <h1 id="volume" class="heading set">Increase Volume to MAXIMUM, then</h1>
-	  <h1 id="wave" class="heading hide set">Now wave your wand around like Harry Potter!!!</h1>
+  <div class="container"> 
+    <h1 id="volume" class="heading">Increase Volume to MAXIMUM, then</h1>
+	  <h1 id="wave" class="heading hide">Now wave your wand around like Harry Potter!!!</h1>
 	  <button id="foundbtn" class="heading hide button">Found my wand</buttton>
 	  <button  class="button heading">Tap to Begin</button>
   </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js'></script>
-   <!-- <script id="rendered-js">
-          var canAfter = document.getElementById("canvas-after");
-
-function setup() {
-  frameRate(1);
-  var can = createCanvas(displayWidth, displayHeight);
-  can.parent("canvas-cover");
-  angleMode(DEGREES);
-  background(0);
-  strokeWeight(2);
-}
-
-function mouseClicked() {
-  if (Math.floor(random(3)) == 1) {
-    console.log("light");
-    lightning();
-  } else {
-    console.log("thunder");
-    thunder();
-  }
-}
-
-function lightning() {
-  background(0);
-  canAfter.className = "lightUpBig";
-  setTimeout(function () {
-    background(0);
-    canAfter.className = "";
-  }, 1000);
-}
-
-function thunder() {
-  background(0);
-  canAfter.className = "lightUp";
-  fractal(width / 2, 0);
-  setTimeout(function () {
-    background(0);
-    canAfter.className = "";
-  }, 400);
-}
-
-function fractal(x, y) {
-  stroke(255);
-  if (y > 500) {
-    return;
-  }
-  var targetX = x + random(-100, 100);
-  var targetY = y + 70;
-  var shouldBranch = Math.floor(random(3));
-  if (shouldBranch == 2) {
-    fractal(targetX, targetY);
-  }
-  line(x, y, targetX, targetY);
-  fractal(targetX, targetY);
-}
-          //# sourceURL=pen.js
-        </script>
- --> 
+   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script> 
   <script src="libs/jquery-2.1.3.min.js"></script>
   <script src="libs/howler.min.js"></script>

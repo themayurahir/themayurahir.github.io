@@ -18,7 +18,7 @@ $('document').ready(function(){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					window.setTimeout(function(){
 						//Move to a new location or you can do something else	
-						window.location.href = "../wand/wand.html";
+						window.location.href = "../wand/ollivanders-shop.html";
 					}, 5000);
 				});
 				

@@ -91,10 +91,9 @@ var theFunctionToCallWhenTheDocumentIsReady = function() {
     $("button").on("click touchstart", function(touchEvent) {
       $("button").hide();
       $("#volume").hide();
-      $("#myVideo").hide();
       
       $("#wave").show();
-	    //$("#foundbtn").show();
+	    $("#foundbtn").show();
 	    playAllSounds();
     });
 
