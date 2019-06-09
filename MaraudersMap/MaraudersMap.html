@@ -7,6 +7,9 @@
 </head>
 <body>
 	<div class="main-content">
+    <div>
+          <h2 id="text">Heard: </h2>
+    </div>
   <div class="map-base">
     <div class="footsteps footsteps-1">
       <div class="footstep left"></div>
@@ -55,6 +58,7 @@
     </div>
   </div>
 </div>
+<!--
 <div class="instructions">
   <p>1. Enable Codepen to use your microphone.</p>
   <p>2. Map will open if you say "I solemnly swear that I'm up to no good."</p>
@@ -68,51 +72,9 @@
   <div class="explanation">Part of the <a href="https://codepen.io/collection/XJNKLz/" target="_blank">CSS Animations</a> and <a href="https://codepen.io/collection/DjwqvK/" target="_blank">Harry Potter</a> collections.</div>
 </aside>
 <footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a></footer>
-
+-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/artyom.js'></script>
-<script type="text/javascript">
-	//toggle button
-$('.js-toggle').on('click', function(){
-	$('.map-base').toggleClass('active');
-});
-
-
-//initialization of speech recognition starts here
-const artyom = new Artyom();
-var commands = [
- {
-	 indexes:["up to no good"],
-	 action:function() {
-		 $('.map-base').addClass('active');
-	 }
- }, {
-	 indexes:["mischief managed"],
-	 action:function() {
-		 $('.map-base').removeClass('active');
-	 }
- }
-]
-
-artyom.addCommands(commands);
-
-function startContinuousArtyom(){
-    artyom.fatality();
-
-    setTimeout(function(){
-         artyom.initialize({
-            lang:"en-GB",
-            continuous:true,
-            listen:true, 
-            speed:1
-        }).then(function(){
-            console.log("Ready to work !");
-        });
-    },250);
-}
-
-startContinuousArtyom();
-</script>
-
+<script src="MaraudersMap.js"></script>
 </body>
 </html>

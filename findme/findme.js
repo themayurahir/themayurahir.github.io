@@ -54,7 +54,7 @@ $('document').ready(function(){
             if (distance < 8) {
                 window.setTimeout(function(){
                     //Move to a new location or you can do something else	
-                    window.location.href = "wand/wand.html";
+                    window.location.href = "../MaraudersMap/MaraudersMap.html";
                 }, 3000);
             }
             

@@ -1,0 +1,104 @@
+@keyframes fade-out {
+    to {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+    cursor: url(../img/wandcursor.png), auto;
+  }
+  
+body {
+    font-family: sans-serif;
+    background: url(../img/wandcursor.png);
+  }
+  
+.wrap {
+    padding: 15px;
+    background: lightblue;
+    text-align: center;
+    margin: 3em auto;
+    width: 960px;
+    height: auto;
+    max-width: 460px;
+  }
+  .wrap > p {
+    margin: 1em 0;
+  }
+  .wrap > p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .lumos {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition-property: width, height;
+    transition-duration: 450ms;
+    border-radius: 50%;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.96);
+    top: 0;
+    left: 0;
+  }
+  .lumos:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 51px 0 yellow;
+  }
+  .lumos.active {
+    width: 200px;
+    height: 200px;
+    animation: fade-out 5s 8s linear forwards;
+  }
+  .lumos-spell {
+    position: absolute;
+    top: 50%;
+    transform: transalteY(-50%);
+    z-index: 10;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    transition: opacity 450ms;
+  }
+  .lumos-spell.hide {
+    opacity: 0;
+  }
+
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .head h1, .head h2 {
+    color: #083377;
+  }
+  .head #text {
+    text-transform: capitalize;
+  }
+  
+  
+@media (max-width: 1000px) {
+    .wrap {
+        padding: 15px;
+        background: lightblue;
+        text-align: center;
+        margin: 50% auto;
+        width: 990px;
+        height: auto;
+        max-width: 550px;
+      }
+}

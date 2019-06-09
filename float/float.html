@@ -1,119 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CodePen - Harry potter float</title>
-<style>
-      body {
-		background-color: #33CAF4;
-		text-shadow: 1px 1px 6px black;
-}
-
-.feather-wrap {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  overflow: hidden;
-}
-.feather-wrap .feather {
-  position: absolute;
-  top: 50%;
-  background-image: url("http://pngimg.com/uploads/feather/feather_PNG12958.png");
-  background-size: contain;
-  background-position: center;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-
-.float {
-  animation: float 3s linear 2 alternate, shake 3s ease-in-out 2 alternate;
-}
-
-@keyframes float {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: 20%;
-  }
-}
-@keyframes shake {
-  0% {
-    transform: rotatez(0deg);
-  }
-  50% {
-    transform: rotatez(10deg);
-  }
-  100% {
-    transform: rotatez(-5deg);
-  }
-}
-.head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0px 20px 0px;
-}
-.head h1, .head h2 {
-  color: #F2F2F2;
-}
-.head #text {
-  text-transform: capitalize;
-}
-
-    </style>
-
+  <meta charset="UTF-8">
+  <title>CodePen - Harry potter float</title>
+  <link rel="stylesheet" href="float.css">
 </head>
-<body translate="no">
-<div class="head">
-<h1>Say the magical words "Wingardium Leviosa" or "Float" <small>* needs mic permission</small></h1>
-<h2 id="text">Heard: </h2>
-</div>
-<div class="feather-wrap">
-<div class="feather">
-</div>
-</div>
-<script>
-      window.addEventListener('DOMContentLoaded', () => {
-  const textDiv = document.getElementById('text');
-  const feather = document.querySelector('.feather');
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognition();
-
-  recognition.start();
-  console.log('started');
-  recognition.addEventListener('result', result => {
-    console.log('listned');
-    console.log(result.results[0][0].transcript);
-    let listenedWord = result.results[0][0].transcript;
-    if (listenedWord.toLowerCase() === 'wingardium leviosa' || listenedWord.toLowerCase() === 'float')
-    {
-      feather.classList.add('float');
-    }
-	else if(listenedWord.toLowerCase() === 'exit')
-	{
-		window.location.href = "findme/findme.html";
-	}
-    textDiv.innerHTML = "Heard:";
-    textDiv.innerHTML = textDiv.innerHTML + " " + listenedWord;
-  });
-
-  feather.addEventListener('animationstart', () => {
-
-  });
-  feather.addEventListener('animationend', () => {
-    feather.classList.remove('float');
-    recognition.start();
-  });
-
-  recognition.addEventListener('end', recognition.start);
-});
-      //# sourceURL=pen.js
-    </script>
-<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+<body>
+  <div class="head">
+    <h1>Say the magical words "Wingardium Leviosa" or "Float" <small>* needs mic permission</small></h1>
+    <h2 id="text">Heard: </h2>
+  </div>
+  <div class="feather-wrap">
+    <div class="feather"></div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="float.js"></script>
 </body>
 </html>
