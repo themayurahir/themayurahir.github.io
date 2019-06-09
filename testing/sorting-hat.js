@@ -15,7 +15,38 @@ $(".js-sort").on("click", function() {
 	}, 1500);
 	setTimeout(function() {
 		$(".main-content__wrapper").addClass(item);
-		$()
+		$(".avatar-gender").addClass("hide");
+	}, 4000);
+	setTimeout(function() {
+		if(item === 'hufflepuff')
+		{
+			document.getElementById("section2").style.backgroundImage = "url('Hufflepuff.png')";
+			document.getElementById("section2").style.backgroundPosition = "center center";
+			document.getElementById("section2").style.backgroundRepeat = "no-repeat";
+			document.getElementById("section2").style.backgroundSize = "100% 100%";
+		}
+		else if(item === 'gryffindor')
+		{
+			document.getElementById("section2").style.backgroundImage = "url('Gryfindor.png')";
+			document.getElementById("section2").style.backgroundPosition = "center center";
+			document.getElementById("section2").style.backgroundRepeat = "no-repeat";
+			document.getElementById("section2").style.backgroundSize = "100% 100%";
+		}
+		else if(item === 'ravenclaw')
+		{
+			document.getElementById("section2").style.backgroundImage = "url('Ravenclaw.png')";
+			document.getElementById("section2").style.backgroundPosition = "center center";
+			document.getElementById("section2").style.backgroundRepeat = "no-repeat";
+			document.getElementById("section2").style.backgroundSize = "100% 100%";
+		}
+		else if(item === 'slytherin')
+		{
+			document.getElementById("section2").style.backgroundImage = "url('Slytherin.png')";
+		    document.getElementById("section2").style.backgroundPosition = "center center";
+			document.getElementById("section2").style.backgroundRepeat = "no-repeat";
+			document.getElementById("section2").style.backgroundSize = "100% 100%";
+		
+		}
 	}, 4000);
 
 	//window.setTimeout(function(){

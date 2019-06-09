@@ -3,6 +3,10 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
+.hide{
+  opacity: 1; 
+}
+
 aside.context {
   text-align: center;
   color: #333;
@@ -62,7 +66,13 @@ footer a .icons {
 }
 
 .gryffindor {
-  background: #ad343e;
+  /*background: #ad343e;*/
+}
+.gryffindor1 {
+  background-image: url("0.33\ Gryfindor\ crest\ new.png");
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
 }
 .gryffindor .avatar__coat:before, .gryffindor .avatar__coat:after {
   background: #ad343e;
@@ -75,8 +85,16 @@ footer a .icons {
 }
 
 .hufflepuff {
-  background: #eab000;
+  /*background: #eab000;*/
 }
+
+.hufflepuff1 {
+  background-image: url("0.53\ Hufflepuff\ crest\ new.png");
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
 .hufflepuff .avatar__coat:before, .hufflepuff .avatar__coat:after {
   background: #eab000;
 }
@@ -88,8 +106,16 @@ footer a .icons {
 }
 
 .ravenclaw {
-  background: #006daf;
+  /*background: #006daf;*/
 }
+
+.ravenclaw1 {
+  background-image: url("0.43\ Ravenclaw\ crest\ new.png");
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
 .ravenclaw .avatar__coat:before, .ravenclaw .avatar__coat:after {
   background: #006daf;
 }
@@ -101,8 +127,16 @@ footer a .icons {
 }
 
 .slytherin {
-  background: green;
+  /*background: green;*/
 }
+
+.slytherin1 {
+  background-image: url("0.63\ Slytherin\ crest\ new.png");
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
 .slytherin .avatar__coat:before, .slytherin .avatar__coat:after {
   background: green;
 }
@@ -409,6 +443,7 @@ footer a .icons {
   z-index: 5;
   width: 0;
   opacity: 0;
+  text-shadow: 2px 2px 2px #000;
 }
 .sorting-hat__answer:before {
   content: "(";
@@ -418,6 +453,7 @@ footer a .icons {
   top: 45px;
   left: 50%;
   transform: rotate(-20deg);
+  text-shadow: 2px 2px 2px #000;
 }
 
 .sort-house {
@@ -647,6 +683,7 @@ footer a .icons {
   z-index: 5;
   width: 0;
   opacity: 0;
+  text-shadow: 2px 2px 2px #000;
 }
 
   
