@@ -161,12 +161,18 @@ footer a .icons {
 .ravenclaw aside.context,
 .ravenclaw aside.context a,
 .ravenclaw .sort-house,
-.ravenclaw .avatar-gender {
+.ravenclaw .avatar-gender,
+.hufflepuff .sorting-hat__answer,
+.hufflepuff aside.context,
+.hufflepuff aside.context a,
+.hufflepuff .sort-house,
+.hufflepuff .avatar-gender {
   color: #fff;
 }
 .slytherin .avatar-gender input:checked + label:after,
 .gryffindor .avatar-gender input:checked + label:after,
-.ravenclaw .avatar-gender input:checked + label:after {
+.ravenclaw .avatar-gender input:checked + label:after,
+.hufflepuff .avatar-gender input:checked + label:after {
   background: #fff;
 }
 .slytherin footer a,
@@ -465,6 +471,7 @@ footer a .icons {
   cursor: pointer;
   width: 180px;
   position: relative;
+  text-shadow: 2px 2px 2px #000;
 }
 .sort-house:before {
   content: "";

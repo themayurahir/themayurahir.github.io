@@ -2,6 +2,8 @@
 $(".js-sort").on("click", function() {
 	$(".main-content__wrapper").removeClass().addClass("main-content__wrapper");
 	$(".sorting-hat,.avatar__mouth").removeClass("animate");
+	$(".js-go").removeClass("hide");
+	$(".js-sort").addClass("hide");
 
 	var houses = ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"];
 	var item = houses[Math.floor(Math.random() * houses.length)];
