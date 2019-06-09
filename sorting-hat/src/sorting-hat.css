@@ -505,6 +505,7 @@ footer a .icons {
   flex: auto;
 }
 .avatar-gender p {
+  color: #000;
   font-weight: 700;
 }
 .avatar-gender input {
