@@ -12,6 +12,13 @@
 
 	<link rel="stylesheet" type="text/css" href="fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="sorting-hat.css">    
+
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,700|Lobster+Two" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
+
 	<style>
 
 	/* Style for our header texts
@@ -19,6 +26,7 @@
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
+		text-shadow: 2px 2px 2px #000;
 		color: #fff;
 		margin:0;
 	}
@@ -30,6 +38,7 @@
 	* --------------------------------------- */
 	.section{
 		text-align:center;
+		object-fit: cover;
 	}
 
 	/* Bottom menu
@@ -86,35 +95,63 @@
 	<div class="section fp-auto-height-responsive" id="section0">
 		<div class="intro">
 			<video id="myVideo" loop muted data-autoplay>
-			<source src="1.02 Letters B1C3M1.mp4" type="video/mp4">
+			<source src="1.07 Sorting Hat v2 1080 B1C7M2.mp4" type="video/mp4">
 			
 		</video>
 		<div class="layer">
-			<h1>fullPage.js videos</h1>
+			<h1>Sorting Hat Ceremony</h1>
 		</div>
 		</div>
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-			<div class="intro">
-				<h1>Ideal for small screens</h1>
-			</div>
-		</div>
-
-	    <div class="slide" id="slide2">
-			<h1>This example uses responsiveWidth: 900</h1>
-		</div>
-
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Keep it simple!</h1>
+				<div class="main-content__wrapper">
+						<div class="main-content">
+							<div class="sorting-hat">
+								<div class="sorting-hat__answer">Gryffindor!</div>
+								<div class="sorting-hat__top"></div>
+								<div class="sorting-hat__eye left"></div>
+								<div class="sorting-hat__eye right"></div>
+								<div class="sorting-hat__mouth"></div>
+								<div class="sorting-hat__base"></div>
+							</div>
+							<div class="avatar">
+								<div class="avatar__hair"></div>
+								<div class="avatar__head">
+									<div class="avatar__eyes left"></div>
+									<div class="avatar__eyes right"></div>
+									<div class="avatar__mouth"></div>
+								</div>
+								<div class="avatar__ears left"></div>
+								<div class="avatar__ears right"></div>
+								<div class="avatar__coat">
+									<div class="avatar__shirt">
+										<div class="avatar__tie"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="sort-house js-sort">Sort Me!</button>
+						<div class="avatar-gender">
+							<p>Avatar :</p>
+							<div>
+								<input type="radio" id="avatar-male" name="avatar-gender" value="1" checked="true"/>
+								<label for="avatar-male">Male</label>
+							</div>
+							<div>
+								<input type="radio" id="avatar-female" name="avatar-gender" value="2"/>
+								<label for="avatar-female">Female</label>
+							</div>
+						</div>
 		</div>
 	</div>
 </div>
 
 <script type="text/javascript" src="fullpage.js"></script>
 <script type="text/javascript" src="examples.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="sorting-hat.js"></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
