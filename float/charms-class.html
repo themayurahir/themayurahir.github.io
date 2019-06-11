@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Charms Class</title>
+	
+	<link rel="stylesheet" type="text/css" href="../src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../src/examples.css" />
+	<link rel="stylesheet" href="float.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	p{
+		font-size: 5em;
+		font-family: "Lobster Two", cursive;
+		color: #fff;
+		margin:0;
+		padding:0;
+		text-shadow: 2px 2px 2px #000;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section2
+	{
+		
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url("assests/1.31\ Filius\ Flitwick\ -\ Charms\ Class\ B1C10M2.jpg");
+		background-position: center;
+	}
+	#section0 p{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	
+	</style>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0"><p>Charms Class</p></div>
+
+	<div class="section" id="section2"><div class="head">
+		<h1>One of the wizard's most rudimentary skills is levitation or the ability to make objects fly. Enunciate <i>Wingardium Leviosa.</i>
+			<br> <small>It's leviOsa, not levioSA!</small></h1>
+		<h2 id="text">Heard: </h2>
+	  </div>
+	  <div class="feather-wrap">
+		<div class="feather"></div>
+	  </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../src/fullpage.js"></script>
+<script type="text/javascript" src="../src/examples.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="float.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3:false
+    });
+</script>
+</body>
+</html>

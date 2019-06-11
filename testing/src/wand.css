@@ -1,0 +1,32 @@
+body{
+  background-image: url("../assests/wand.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+		
+}
+.container {
+	margin-left: auto;
+	margin-top: auto;
+	padding: 0;
+  margin: 0;
+  overflow: hidden;
+	text-align: center;
+}
+
+.heading {
+  font-family: "Harry Potter";
+  font-size: 4em;
+  color:#e8d52c;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 3px #000;
+}
+
+.button {
+  background-color: transparent;
+  border-block: 1px;
+  font-size: 4em;
+}
+
+.hide {
+  display: none;
+}

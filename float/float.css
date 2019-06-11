@@ -52,9 +52,19 @@ body {
   align-items: center;
   padding: 20px 0px 20px 0px;
 }
+
 .head h1, .head h2 {
   color: #F2F2F2;
 }
 .head #text {
   text-transform: capitalize;
+}
+
+@media (max-width: 1000px){
+  .head h1{
+    font-size: 32px;
+  }
+  .head h1 small{
+    font-size: 28px;
+  }
 }

@@ -1,10 +1,10 @@
 body {
   background: #f2f2f2;
   font-family: "Questrial", sans-serif;
-  background-image: url("hogwartsexpress.jpg");
+  background-image: url("1.14\ Kings\ Cross\ -\ Hogwarts\ Express\ Exterior\ B1C6M1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover cover;
   cursor: url(../img/wandcursor.png), auto;
 }
 
@@ -300,7 +300,7 @@ footer a .icons {
   body {
     background: #f2f2f2;
     font-family: "Questrial", sans-serif;
-    background-image: url("hge.jpg");
+    background-image: url("1.14\ Kings\ Cross\ -\ Hogwarts\ Express\ Exterior\ B1C6M1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

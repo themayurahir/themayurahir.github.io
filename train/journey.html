@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Train Journey</title>
+	
+	<link rel="stylesheet" type="text/css" href="../src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../src/examples.css" />
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: "Lobster Two", cursive;
+		text-shadow: 2px 2px 2px #000;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		object-fit: cover;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		/*background-image:  our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+	
+	#section0 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+.toggle-map {
+  border: 2px solid;
+  margin: 30px auto 0;
+  background: transparent;
+  font: 34px "Lobster Two", cursive;
+  text-shadow: 2px 2px 2px #000;
+  padding: 8px 30px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.toggle-map:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 8px);
+  height: 51px;
+  left: 2px;
+  top: 2px;
+  border: 2px solid;
+}
+.toggle-map:hover:before {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  left: -2px;
+  top: -2px;
+  right: auto;
+}
+.toggle-map:focus {
+  outline: none;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section fp-auto-height-responsive" id="section0">
+		<div class="intro">
+			<video id="myVideo" loop muted data-autoplay>
+                <source src="1.06 Journey - Scenery B1C6M2.mp4" type="video/mp4">
+			</video>
+			<div class="layer" id="load">
+                <button class="toggle-map cssanimation fadeInBottom" id="js-toggle">Let's go to Hogwarts!</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../src/fullpage.js"></script>
+<script type="text/javascript" src="../src/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F','#000'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+
+        }
+
+    });
+    	
+    document.getElementById("js-toggle").onclick = function () {
+      window.setTimeout(function(){
+        //Move to a new location or you can do something else	
+        window.location.href = "../sorting-hat/sorting-hat.html";
+      }, 2000);}
+
+</script>
+
+</body>
+</html>

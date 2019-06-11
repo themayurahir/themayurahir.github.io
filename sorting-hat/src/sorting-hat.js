@@ -1,10 +1,7 @@
-
 $(".js-sort").on("click", function() {
 	$(".main-content__wrapper").removeClass().addClass("main-content__wrapper");
 	$(".sorting-hat,.avatar__mouth").removeClass("animate");
-	$(".js-go").removeClass("hide");
-	$(".js-sort").addClass("hide");
-
+	
 	var houses = ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"];
 	var item = houses[Math.floor(Math.random() * houses.length)];
 
@@ -51,10 +48,14 @@ $(".js-sort").on("click", function() {
 		}
 	}, 4000);
 
-	//window.setTimeout(function(){
-        //Move to a new location or you can do something else	
-    //    window.location.href = "";
-      //}, 8000);
+	window.setTimeout(function(){
+		window.location.href = "../float/float.html";
+	}, 15000);
+
+});
+
+$(".js-sort").on("click", function() {
+	
 });
 
 
