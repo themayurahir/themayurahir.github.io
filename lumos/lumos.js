@@ -29,6 +29,7 @@ var el = document.querySelector('.lumos');
           
             recognition.start();
             console.log('started');
+            recognition.continuous = true;
             recognition.addEventListener('result', result => {
               console.log('listned');
               console.log(result.results[0][0].transcript);
@@ -41,18 +42,20 @@ var el = document.querySelector('.lumos');
               }
               else if(listenedWord.toLowerCase() === 'exit')
               {
-                  window.location.href = "findme/findme.html";
+                  window.location.href = "../findme/findme.html";
               }
               textDiv.innerHTML = "Heard:";
               textDiv.innerHTML = textDiv.innerHTML + " " + listenedWord;
             });
           
-            feather.addEventListener('animationstart', () => {
+            //feather.addEventListener('animationstart', () => {
           
-            });
-            feather.addEventListener('animationend', () => {
-              recognition.start();
-            });
+            //});
+            //feather.addEventListener('animationend', () => {
+              //recognition.start();
+            //});
           
             recognition.addEventListener('end', recognition.start);
+            
+            //recognition.start();
           });
