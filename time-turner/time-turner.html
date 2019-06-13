@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Time Turner</title>
+    <link rel="stylesheet" href="time-turner.css">
+</head>
+<body>
+    <div class="container">
+    <div class="time-turner-container">
+        <div class="time-turner-chain-container">
+          <div class="time-turner-chain-relative">
+        <ul class="time-turner-chain time-turner-chain-left">
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+        </ul>
+        <ul class="time-turner-chain time-turner-chain-right">
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+          <li class="time-turner-chain-link"></li>
+        </ul>
+          </div>
+        </div>
+        <div class="time-turner-large-hinge time-turner-large-hinge-left"></div>
+        <div class="time-turner-large-hinge time-turner-large-hinge-right"></div>
+        <div class="time-turner-outter">
+          
+          <div class="time-turner-large-hinge time-turner-large-hinge-top"></div>
+          
+          <div class="time-turner-large-hinge time-turner-large-hinge-bottom"></div>
+          
+          <div class="time-turner-inner">
+            <div class="time-turner-center">
+              <div class="time-turner-infinity-container">
+                <div class="time-turner-infinity"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layer">
+            <button class="toggle-map" id="js-toggle">Turn Time</button>
+      </div>
+    </div>
+
+    <script>
+        document.getElementById("js-toggle").onclick = function () {
+            window.setTimeout(function(){
+            window.location.href = "../sorting-hat/sorting-hat.html";
+      }, 2000);}
+
+    </script>
+</body>
+</html>

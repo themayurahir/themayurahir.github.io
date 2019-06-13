@@ -1,0 +1,264 @@
+body{
+    background-color: maroon;
+}
+.container{
+    margin: 900px 550px;
+}
+.time-turner-container {
+    height: 210px;
+    width: 210px;
+    border: 4px solid #FBC976;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .time-turner-chain-container {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 350px;
+    width: 560px;
+    position: absolute;
+    top: -140px;
+    left: -175px;
+  }
+  .time-turner-chain-relative {
+    position: relative;
+    display: block;
+  }
+  
+  .time-turner-chain {
+    list-style-type: none;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+  
+  .time-turner-chain-left {
+    left: 130px;
+    top: -2px;
+    transform: rotate(-30deg);
+  }
+  
+  .time-turner-chain-right {
+    right: 130px;
+    top: -2px;
+    transform: rotate(30deg);
+  }
+  
+  .time-turner-chain-link {
+    height: 21px;
+    width: 21px;
+    border: 2px solid #D59B5D;
+    border-radius: 50%;
+    margin: -4px;
+  }
+  
+  .time-turner-outter {
+    border: 4px solid #FBC976;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50%;
+    animation-name: rotateVertical;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    -webkit-transform-style: preserve-3d;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .time-turner-large-hinge {
+    position: absolute;
+    height: 7px;
+    width: 18px;
+    background: #FBC976;
+  }
+  
+  .time-turner-large-hinge-left {
+    left: -7px;
+    top: 48%;
+  }
+  
+  .time-turner-large-hinge-right {
+    right: -7px;
+    top: 48%;
+  }
+  
+  .time-turner-large-hinge-top {
+    top: -4px;
+    transform: rotate(90deg);
+    left: 82px;
+  }
+  
+  .time-turner-large-hinge-bottom {
+    bottom: -4px;
+    transform: rotate(90deg);
+    left: 82px;
+    background: #FBC976;
+  }
+  
+  .time-turner-inner {
+    background: #FBC976;
+    border: 4px solid #A17846;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50%;
+    animation-name: rotateHorizontal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    perspective: 700px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .time-turner-center {
+    height: 100%;
+    width: 100%;
+    background: #FBC976;
+    border-radius: 50%;
+  }
+  
+  .time-turner-infinity-container {
+    position: absolute;
+        top: 39px;
+      left: -8px;
+  }
+  
+  .time-turner-infinity {
+      position: relative;
+      width: 147px;
+      height: 70px;
+      transform: rotate(90deg);
+      margin-top: -18px;
+  }
+  
+  .time-turner-infinity:before,
+  .time-turner-infinity:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 41px;
+      width: 42px;
+      height: 42px;
+      background: -moz-linear-gradient(0deg, rgba(251,201,118,1) 0%, rgba(251,201,118,1) 44%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(251,201,118,1)), color-stop(44%, rgba(251,201,118,1)), color-stop(79%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(251,201,118,1) 0%, rgba(251,201,118,1) 44%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(251,201,118,1) 0%, rgba(251,201,118,1) 44%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(251,201,118,1) 0%, rgba(251,201,118,1) 44%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(251,201,118,1) 0%, rgba(251,201,118,1) 44%, rgba(255,255,255,1) 79%, rgba(255,255,255,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBC976', endColorstr='#FFFFFF',GradientType=1 ); /* ie6-9 */
+      border: 2px solid #fff;
+      -moz-border-radius: 50px 50px 0 50px;
+           border-radius: 50px 50px 0 50px;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    
+  }
+  
+  .time-turner-infinity:after {
+      left: auto;
+      right: 0;
+      -moz-border-radius: 50px 50px 50px 0;
+           border-radius: 50px 50px 50px 0;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+  }
+  
+  @keyframes rotateVertical {
+    0% {
+      transform: rotate3d(1, 0, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(1, 0, 0, 360deg);
+    }
+  }
+  
+  @keyframes rotateHorizontal {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+
+
+
+
+  /* Button */
+
+  .layer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 560px;
+    top: 1120px;
+
+    /*
+    * Preventing flicker on some browsers
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
+
+  .toggle-map {
+    border: 2px solid;
+    margin: 30px auto 0;
+    background: transparent;
+    font: 34px "Lobster Two", cursive;
+    
+    padding: 8px 30px;
+    cursor: pointer;
+    position: relative;
+    color: #FBC976;
+  }
+  .toggle-map:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    height: 51px;
+    left: 2px;
+    top: 2px;
+    border: 2px solid;
+  }
+  .toggle-map:hover:before {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    left: -2px;
+    top: -2px;
+    right: auto;
+  }
+  .toggle-map:focus {
+    outline: none;
+  }
+  
+  .cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeInBottom { animation-name: fadeInBottom }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
+  

@@ -3,6 +3,14 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
+h2{
+  color: #F2F2F2;
+}
+
+.hide{
+  opacity: 0;
+}
+
 aside.context {
   text-align: center;
   color: #fff;

@@ -54,11 +54,6 @@ $(".js-sort").on("click", function() {
 
 });
 
-$(".js-sort").on("click", function() {
-	
-});
-
-
 $('input[name=avatar-gender]').on('change', function(){
 	var value = $('input[name=avatar-gender]:checked').val();
 	if (value == 1) {
