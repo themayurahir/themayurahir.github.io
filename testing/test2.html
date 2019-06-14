@@ -4,7 +4,33 @@
     <link rel="stylesheet" href="test2.css">
 </head>
 <body>
-        <div class='images'>
+
+        <div class="container" id="loader">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="197 143 140 120" width="140" height="120">
+                  <defs>
+                    <path class="main circleAnimate" d="M230,200 C246.56,200 260,213.45 260,230 C260,246.56 246.56,260 230,260 C213.45,260 200,246.56 200,230 C200,213.45 213.45,200 230,200Z" id="leftCircle"></path>
+                    <path class="main circleAnimate" d="M302 200 C318.56 200 332 213.44 332 230 C332 246.56 318.56 260 302 260 C285.44 260 272 246.56 272 230 C272 213.44 285.44 200 302 200Z" id="rightCircle"></path>
+                    <path class="main bridge" d="M260 222.5 C263.91 219.49 267.92 219.49  272.02 222.5" id="bridge"></path>
+                    <path d="M245.29 145L251.96 175.08L245.29 175.08L250.05 196.81L231.96 166.73L241.48 166.73L234.82 145L245.29 145Z" id="lightning"></path>
+                  </defs>
+                  <g>
+                    <g>
+                      <use class="circle" href="#leftCircle"></use>
+                    </g>
+                    <g>
+                      <use class="circle" href="#rightCircle"></use>
+                    </g>
+                    <g>
+                      <use href="#lightning"></use>
+                    </g>
+                    <g>
+                      <use href="#bridge"></use>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+        <div style="display:none;" class='images cssanimation fadeInBottom' id="myImgs">
                 <img class='image' src='imgs/bg1.jpg'>
                 <img class='image' src='imgs/bg2.jpg'>
                 <img class='image' src='imgs/bg3.jpg'>
