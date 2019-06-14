@@ -372,7 +372,7 @@ $('.log').on('click', function(){
 	{
 		console.log('inside if');
 		window.setTimeout(function(){
-			window.location.href = "../index.html";
+			window.location.href = "../gallery/gallery.html";
 		  }, 2000);	
 	}
 	else

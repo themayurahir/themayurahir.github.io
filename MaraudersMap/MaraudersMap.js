@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
       else if(listenedWord.toLowerCase() === 'exit')
       {
-          window.location.href = "../lumos/lumos.html";
+          window.location.href = "../tom-riddle/tom-riddle.html";
       }
       textDiv.innerHTML = "Heard:";
       textDiv.innerHTML = textDiv.innerHTML + " " + listenedWord;

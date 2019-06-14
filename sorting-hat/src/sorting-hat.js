@@ -49,7 +49,7 @@ $(".js-sort").on("click", function() {
 	}, 4000);
 
 	window.setTimeout(function(){
-		window.location.href = "../float/float.html";
+		window.location.href = "../float/charms-class.html";
 	}, 15000);
 
 });
