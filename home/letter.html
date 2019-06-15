@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Letter</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        .image{
+            
+            
+            background-image: url('letter.jpg');
+            background-repeat: no-repeat;
+        }
+        
+
+        .sort-house {
+  border: 3px solid;
+  margin: 40px auto 0 40%;
+  background: transparent;
+  font: 35px "Lobster Two", cursive;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 180px;
+  color: #000;
+  position: relative;
+  text-shadow: 2px 2px 2px #000;
+  z-index: 10;
+}
+.sort-house:before {
+  content: "";
+  position: absolute;
+  width: 166px;
+  height: 52px;
+  left: 2px;
+  top: 2px;
+  border: 2px solid;
+}
+.sort-house:hover:before {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  left: -2px;
+  top: -2px;
+  right: auto;
+}
+.sort-house:focus {
+  outline: none;
+}
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+.blur {
+  color: transparent;
+  text-shadow: 0px 0px 15px #111;
+  transition: 2s;
+  opacity: 0;
+  cursor: pointer;
+}
+.unblur {
+	color:#000;
+  text-shadow: 0px 0px 0px #111;
+  opacity: 1;
+}
+
+
+        @media (max-width: 1000px) {
+            .image{
+                width: 100%;
+                height: 1000px;
+                margin: 35% 0% 0% 13%; 
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class='container' id="myImgs">
+        <div class='image'></div>
+        <button class="sort-house cssanimation fadeInBottom" id="btn">Ticket</button>
+    </div> 
+
+    <script>
+        document.onload = function(){
+            window.setTimeout(function(){
+                console.log('loaded');
+                $(btn).addClass("unblur");
+                $(btn).addClass("cssanimation");
+				$(btn).addClass("fadeInBottom");
+            }, 2000);}
+        
+
+
+	document.getElementById("btn").onclick = function () {
+      window.setTimeout(function(){
+          console.log('clicked');
+        //Move to a new location or you can do something else	
+        window.location.href = "../ticket/ticket.html";
+      }, 2000);}
+
+    </script>
+</body>
+</html>

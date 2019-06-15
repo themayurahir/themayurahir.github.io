@@ -11,6 +11,9 @@ body {
 	display: none;
 }
 .message p {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	position: fixed;
@@ -75,7 +78,7 @@ body {
 	}
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1000px) {
   body { 
     background-image: url('../img/mhagrid.jpg');
 	background-repeat: no-repeat;
@@ -88,5 +91,6 @@ body {
   
   .message p {
 	  text-align: center;
+	  margin-right: 20px;
   }
 }

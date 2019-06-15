@@ -53,14 +53,22 @@
 		height: 100%;
 		background-size: 100% 100%;
  		background-color: black; /* in case the video doesn't fit the whole page*/
-  		background-image: /* our video */;
+  		
   		background-position: center center;
   		background-size: contain;
    		object-fit: cover; /*cover video background */
    		z-index:3;
 	}
 	
-	#section0 .layer{
+	#section0{
+		background-image: url('assests/hogwarts.jpg');
+		background-size: 100% 100%;
+		background-position: center center;
+  		object-fit: cover;
+		background-repeat: no-repeat;
+	}
+
+	#section1 .layer{
 		position: absolute;
 		z-index: 4;
 		width: 100%;
@@ -88,7 +96,15 @@
 <body>
 
 <div id="fullpage">
-	<div class="section fp-auto-height-responsive" id="section0">
+		<div class="section fp-auto-height-responsive" id="section0">
+				<div class="intro">
+					<div class="layer">
+						<!--	<button class="sort-house js-enter" style="color: #fff">Enter</button>
+						-->
+					</div>			
+				</div>
+			</div>
+	<div class="section fp-auto-height-responsive" id="section1">
 		<div class="intro">
 			<video id="myVideo" loop muted data-autoplay>
 				<source src="assests/1.07 Sorting Hat v2 1080 B1C7M2.mp4" type="video/mp4">

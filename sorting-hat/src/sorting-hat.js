@@ -62,3 +62,10 @@ $('input[name=avatar-gender]').on('change', function(){
 		$('.avatar__hair').addClass('female');
 	}
 });
+
+
+$(".js-enter").on("click", function() {
+	window.setTimeout(function(){
+		window.location.href = "#section1";
+	}, 2000);
+});
