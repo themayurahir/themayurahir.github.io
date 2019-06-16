@@ -16,6 +16,8 @@
 
 	/* Style for our header texts
 	* --------------------------------------- */
+	
+
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
@@ -117,12 +119,6 @@
 		background-size: 100% 100%;
 	}
 
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
 
 
 	/* Hiding video controls
@@ -252,7 +248,15 @@
 				$(btn).addClass("fadeInBottom");
 				vid1.loop = true;
 				vid1.play();
-            };
+			};
+			
+	//$(document).ready(function(){
+	//	console.log('loaded');
+	//	screen.onclick = function(){
+	//	document.documentElement.requestFullscreen();
+	//	screen.orientation.lock("landscape");
+	//	console.log('loacked');}
+	//});
 	
 	document.getElementById("btn").onclick = function () {
       window.setTimeout(function(){
