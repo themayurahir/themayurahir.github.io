@@ -100,7 +100,7 @@
       }
       //setTimeout(addLightningAnimate, 5000);
       setTimeout(fullSketch, 7000);
-      setTimeout(showPage, 20000);
+      setTimeout(showPage, 28000);
     }
 
     function showPage() {
