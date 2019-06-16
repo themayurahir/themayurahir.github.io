@@ -2,7 +2,7 @@ body{
     background-color: maroon;
 }
 .container{
-    margin: 900px 550px;
+    margin: 1100px 0 0 650px;
 }
 .time-turner-container {
     height: 210px;
@@ -204,8 +204,8 @@ body{
     position: absolute;
     z-index: 4;
     width: 100%;
-    left: 560px;
-    top: 1120px;
+    left: 660px;
+    top: 1400px;
 
     /*
     * Preventing flicker on some browsers

@@ -230,7 +230,7 @@ $('.log').on('click', function(){
 	{
 		console.log('inside if');
 		window.setTimeout(function(){
-			window.location.href = "../gallery/gallery.html";
+			window.location.href = "../time-turner/time-turner.html";
 		  }, 2000);	
 	}
 	else
