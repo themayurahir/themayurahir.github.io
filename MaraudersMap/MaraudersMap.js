@@ -69,6 +69,7 @@ startContinuousArtyom();*/
 window.addEventListener('DOMContentLoaded', () => {
     const textDiv = document.getElementById('text');
     const map = document.querySelector('.map-base');
+    const tmap = document.querySelector('.toggle-map');
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
   
@@ -78,11 +79,19 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log('listned');
       console.log(result.results[0][0].transcript);
       let listenedWord = result.results[0][0].transcript;
-      if (listenedWord.toLowerCase() === 'wingardium leviosa' || listenedWord.toLowerCase() === 'float')
+      if (listenedWord.toLowerCase() === 'up to no good' || listenedWord.toLowerCase() === "i solemnly swear that i'm up to no good")
       {
         map.classList.add('active');
       }
-      else if(listenedWord.toLowerCase() === 'exit')
+      else if(listenedWord.toLowerCase() === 'mischief managed')
+      {
+        map.classList.remove('active');
+      }
+      else if(listenedWord.toLowerCase() === 'i am bad at this')
+      {
+        tmap.classList.remove('hide');
+      }
+      else if(listenedWord.toLowerCase() === 'exit' || listenedWord.toLowerCase() === 'oh harvey' || listenedWord.toLowerCase() === 'hey harvey' || listenedWord.toLowerCase() === 'harvey' || listenedWord.toLowerCase() === 'hey')
       {
           window.location.href = "../tom-riddle/tom-riddle.html";
       }
