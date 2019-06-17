@@ -105,7 +105,7 @@
 
     function showPage() {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("myImgs").style.opacity = "1";
+        document.getElementById("myImgs").style.display = "block";
       }
   
     function alert() {
