@@ -629,3 +629,19 @@ body .news-page_section.news-topics .column_topic .badge_number {
   align-items: center;
   justify-content: center;
 }
+
+
+
+@media (max-width: 1000px) {
+    body .news-page {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 0 auto;
+        background: #fff8ed;
+        border-radius: 15px;
+        padding: 1.4rem 1rem;
+        padding-bottom: 0.5rem;
+      }
+  }
