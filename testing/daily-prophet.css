@@ -643,5 +643,19 @@ body .news-page_section.news-topics .column_topic .badge_number {
         border-radius: 15px;
         padding: 1.4rem 1rem;
         padding-bottom: 0.5rem;
-      }
+        width: max-content;
+    }
+    body .news-page .exclusive-story__preview .preview-content--link {
+        text-align: right;
+        background: #000;
+        color: #fff;
+        padding: 1px 0.25rem;
+        font-weight: 700;
+        font-size: 10px;
+        margin-top: 3px;
+        
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+    }
   }
