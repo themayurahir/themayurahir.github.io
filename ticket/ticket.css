@@ -311,9 +311,7 @@ footer a .icons {
 @media (max-width: 786px) {
 	.main-content {
 		margin: 50% auto 0;
-		width: 80%;
-		height: 30%;
-		text-transform: uppercase;
+	  text-transform: uppercase;
   }
   
   body {
