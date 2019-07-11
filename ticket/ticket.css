@@ -618,7 +618,7 @@ footer a .icons {
     text-align: center;
   }
 }
-
+/*
 @media screen and (min-width: 401px) and (max-width: 720px) {
   body {
     background: #f2f2f2;
@@ -2077,7 +2077,7 @@ footer a .icons {
 
 
 
-/* Redmi Note 3*/
+/* Redmi Note 3
 
 @media only screen 
    and (min-width : 320px) {
@@ -2371,4 +2371,4 @@ footer a .icons {
   text-align: center;
 }
 
-}
+}*/
