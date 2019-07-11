@@ -386,7 +386,8 @@ footer a .icons {
   
   .main-content {
     margin: 4em auto 0;
-    width: 900px;
+    width: 350px;
+    height: 30%;
     text-transform: uppercase;
   }
   
