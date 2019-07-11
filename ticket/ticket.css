@@ -307,3 +307,22 @@ footer a .icons {
   }
   
 }
+
+@media (max-width: 786px) {
+	.main-content {
+		margin: 50% auto 0;
+		width: 80%;
+		height: 30%;
+		text-transform: uppercase;
+  }
+  
+  body {
+    background: #f2f2f2;
+    font-family: "Questrial", sans-serif;
+    background-image: url("1.14\ Kings\ Cross\ -\ Hogwarts\ Express\ Exterior\ B1C6M1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+}
