@@ -307,7 +307,7 @@ footer a .icons {
   }
   
 }
-
+/*
 @media (max-width: 786px) {
 	.main-content {
 		margin: 50% auto 0;
@@ -325,7 +325,7 @@ footer a .icons {
     background-size: cover;
   }
   
-}*/
+}
 
 @media screen and (max-width: 400px) {
   body {
@@ -2077,10 +2077,10 @@ footer a .icons {
 
 
 
-/* Redmi Note 3
+/* Redmi Note 3*/
 
-@media only screen 
-   and (min-width : 320px) {
+@media screen 
+    (min-width : 320px) and (max-width: 480px){
    body {
   background: #f2f2f2;
   font-family: "Questrial", sans-serif;
@@ -2371,4 +2371,4 @@ footer a .icons {
   text-align: center;
 }
 
-}*/
+}

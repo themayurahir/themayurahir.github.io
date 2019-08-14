@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background video - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen background videos." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,video,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../src/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../src/examples.css" />
+	<link rel="stylesheet" href="../style.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	
+
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		overflow: hidden;
+	}
+
+	h1{
+		
+		transform: translateY(-50%);
+		position: relative;
+		z-index: 10;
+	}
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+	#myVideo1{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		
+  		
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+
+
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section5 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section0{
+		overflow: hidden;
+		background-image: url('1.02 Privet Drive - Dumbledore and Cat at Privet Drive B1C1M2.jpg');
+		background-size: 100% 100%;
+	}
+
+	#section2{
+		overflow: hidden;
+		background-image: url('2.01 Privet Drive - Privet Drive Front Door B2C1M1.jpg');
+		background-size: 100% 100%;
+	}
+
+	#section3{
+		overflow: hidden;
+		background-image: url('1.04 Privet Drive - Cupboard Under the Stairs B1C2M1.jpg');
+		background-size: 100% 100%;
+	}
+
+	#section4{
+		overflow: hidden;
+		background-image: url('4.04 Privet Drive - Dursleys Living Room B4C4M1.jpg');
+		background-size: 100% 100%;
+	}
+
+
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
+
+	.sort-house {
+  border: 3px solid;
+  margin: 40px auto 0;
+  background: transparent;
+  font: 35px "Lobster Two", cursive;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 180px;
+  color: #fff;
+  position: relative;
+  text-shadow: 2px 2px 2px #000;
+  z-index: 10;
+}
+.sort-house:before {
+  content: "";
+  position: absolute;
+  width: 166px;
+  height: 52px;
+  left: 2px;
+  top: 2px;
+  border: 2px solid;
+}
+.sort-house:hover:before {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  left: -2px;
+  top: -2px;
+  right: auto;
+}
+.sort-house:focus {
+  outline: none;
+}
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+.blur {
+  color: transparent;
+  text-shadow: 0px 0px 15px #111;
+  transition: 2s;
+  opacity: 0;
+  cursor: pointer;
+}
+.unblur {
+	color:#fff;
+  text-shadow: 0px 0px 0px #111;
+  opacity: 1;
+}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+	<div id="load">
+			<div id=loader>
+					<div class="wrapper">
+				  <div class="pie spinner"></div>
+				  <div class="pie filler"></div>
+				  <div class="mask"></div>
+				</div>
+			  
+				<div class="wand"></div>
+				<div class="t1"></div>
+				<div class="t2"></div>
+				<div class="t3"></div>
+			  
+				<div class="text">
+					I open at the close
+				</div>
+	</div>
+
+<div id="fullpage" style="display:none;">
+	<audio controls data-autoplay loop>
+		<source  src="../Project T.mp3" type="audio/mpeg">
+	</audio>
+	<div class="section " id="section0">
+		<h1></h1>
+	</div>
+	<div class="section " id="section1">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="1.01 Privet Drive B1C1M1.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="section " id="section2">
+		<h1></h1>
+	</div>
+	<div class="section " id="section3">
+		<h1></h1>
+	</div>
+	<div class="section " id="section4">
+		<h1></h1>
+	</div>
+	<div class="section " id="section5">
+		<video id="myVideo1" muted data-autoplay>
+			<source src="1.02 Letters B1C3M1.mp4" type="video/mp4">
+		</video>
+		<!--<h1>
+            <button class="sort-house blur cssanimation fadeInBottom" id="btn">Letter!</button>
+		</h1>-->
+		<h1><button class="sort-house blur js-next1" id="btn">Letter!</button></h1>
+	</div>
+</div>
+
+<script type="text/javascript" src="../src/fullpage.js"></script>
+<script type="text/javascript" src="../src/examples.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+	});
+
+			var vid1 = document.getElementById('myVideo1');
+            
+            vid1.onended = function() {
+                console.log("Video ended");
+                $(btn).addClass("unblur");
+                $(btn).addClass("cssanimation");
+				$(btn).addClass("fadeInBottom");
+				vid1.loop = true;
+				vid1.play();
+			};
+			
+	//$(document).ready(function(){
+	//	console.log('loaded');
+	//	screen.onclick = function(){
+	//	document.documentElement.requestFullscreen();
+	//	screen.orientation.lock("landscape");
+	//	console.log('loacked');}
+	//});
+	
+	document.getElementById("btn").onclick = function () {
+      window.setTimeout(function(){
+        //Move to a new location or you can do something else	
+        window.location.href = "letter.html";
+	  }, 2000);}
+	  
+	  var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 5000);
+    }
+
+    function showPage() {
+		document.getElementById("load").style.display = "none";
+        document.getElementById("fullpage").style.display = "block";
+		  }
+    }
+</script>
+
+</body>
+</html>

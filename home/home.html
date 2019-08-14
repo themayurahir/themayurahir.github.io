@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Background video - fullPage.js</title>
+	<title>Home</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
     <meta name="description" content="fullPage full-screen background videos." />
     <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,video,full-screen" />
@@ -74,6 +74,22 @@
    		z-index:3;
 	}
 
+	#myVideo2{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		
+  		
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
 
 
 	/* Layer with position absolute in order to have it over the video
@@ -107,11 +123,11 @@
 		background-size: 100% 100%;
 	}
 
-	#section3{
+	/*#section3{
 		overflow: hidden;
 		background-image: url('1.04 Privet Drive - Cupboard Under the Stairs B1C2M1.jpg');
 		background-size: 100% 100%;
-	}
+	}*/
 
 	#section4{
 		overflow: hidden;
@@ -200,19 +216,21 @@
 </head>
 <body>
 <div id="fullpage">
-	<div class="section " id="section0">
-		<h1></h1>
-	</div>
 	<div class="section " id="section1">
 		<video id="myVideo" loop muted data-autoplay>
 			<source src="1.01 Privet Drive B1C1M1.mp4" type="video/mp4">
 		</video>
 	</div>
+	<div class="section " id="section0">
+		<h1></h1>
+	</div>
 	<div class="section " id="section2">
 		<h1></h1>
 	</div>
 	<div class="section " id="section3">
-		<h1></h1>
+		<video id="myVideo2" muted data-autoplay>
+			<source src="https://drive.google.com/uc?id=1snColT-2HdvRSoTD2FvvJEgtr0NyrVyw" type="video/mp4">
+		</video>
 	</div>
 	<div class="section " id="section4">
 		<h1></h1>
@@ -257,6 +275,28 @@
 	//	screen.orientation.lock("landscape");
 	//	console.log('loacked');}
 	//});
+	var video = document.getElementById("myVideo2");
+	jQuery(function($){
+  		$('#section3').click(function(e){
+			console.log( 'clicked on div' );
+			video.muted = false;
+    		e.stopPropagation(); // Prevent bubbling
+  		});
+  		$('body').click(function(e){
+    		console.log( 'clicked outside of div' );
+  		});
+	});
+
+	/*
+	function unmuteVideo(){
+		var video = document.getElementById("myVideo2");
+		console.log("Playing");
+
+  if(video.muted){
+	video.muted = false;
+	console.log("inside muted");
+  }
+	}*/
 	
 	document.getElementById("btn").onclick = function () {
       window.setTimeout(function(){

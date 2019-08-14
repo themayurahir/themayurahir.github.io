@@ -1,6 +1,6 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <link rel="stylesheet" href="ticket.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
       </div>
       <div class="info time">
         <div class="info__item">Time</div>
-        <div class="info__detail">12:00AM</div>
+        <div class="info__detail" id="mainTime">12:00AM</div>
       </div>
       <div class="info carriage">
         <div class="info__item">car</div>
@@ -87,7 +87,18 @@
     </div>
   </div>
 </div>
-<footer></footer>
+<script>
+  var today = new Date();
+  var hours = today.getHours();
+  var minutes = today.getMinutes()+5;
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+
+  document.getElementById("mainTime").innerHTML = strTime;
+</script>
 </body>
 </html>
 	
